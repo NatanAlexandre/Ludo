@@ -38,8 +38,14 @@
     }
 
     header > a {
+        position: absolute;
         text-decoration: none;
         color: white;
+        font-size: 60px;
+        left: 15%;
+        top: 3%;
+        font-family: 'Handjet ', cursive;
+        font-family: 'Shadows Into Light', cursive;
     }
     
     body {
@@ -48,13 +54,88 @@
     
     main {
         width: 1200px;
-        height: 300px;
+        height: 550px;
         background-color: #ffff;
         margin-right: auto;
         margin-left: auto;
         border-radius: 10px;
         margin-top: 20px;
     }
+
+    nav {
+        position: absolute;
+        margin-top: 40px;
+        margin-left: 23%;
+    }
+
+    nav > button {
+        width: 175px;
+        height: 44px;
+        color: #ffff;
+        text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.349);
+        border: none;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.342);
+        margin-right: 10px;
+        font-weight: bolder;
+    }
+
+    nav > button:hover {
+        box-shadow:inset 5px 5px 5px rgba(0, 0, 0, 0.342);
+        cursor: pointer;
+    }
+
+    #jogos {
+        background-color: #D0D0EF;
+    }
+
+    #ludo {
+        background-color: #BDAC91;
+    }
+
+    #atividades {
+        background-color: #F2D896;
+    }
+    #GamesHomePage > #game1 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 65%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    #title1{
+        position: absolute;
+        top: 85%;
+        left: 36%;
+        text-decoration: none;
+        color: black;
+    }
+
+    #GamesHomePage > #game2 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 40%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    #title2{
+        position: absolute;
+        top: 85%;
+        left: 61%;
+        text-decoration: none;
+        color: black;
+    }
+
 }
 
 @media  (max-width: 1000px) {
