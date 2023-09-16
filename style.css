@@ -138,6 +138,10 @@ footer {
         height: 70px;
     }
 
+    hr {
+        display: none;
+    }
+
     .container {
         display: flex;
         justify-content: center;
@@ -165,22 +169,69 @@ footer {
 /*Tablet*/
 
 @media screen and (min-width: 720px) and (max-width: 1200px){
-    main, footer {
-        display: none;
-    }
 
     header {
         padding: 30px;
-        display: flexbox;
+        display: flex;
     }
 
     header > a {
         font-size: 50px;
     }
 
+    #login {
+        padding: 10px;
+        margin-left: auto;
+    }
+
     #login > button {
         padding: 15px;
-        margin-left: 0px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    main {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 100%;
+    }
+
+    nav {
+        padding: 20px;
+    }
+
+    nav > button{
+        padding: 15px;
+        width: 180px;
+    }
+
+    hr {
+        padding: 0.3px;
+        background-color: black;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .images {
+        padding: 5x;
+        margin-top: 40px;
+    }
+
+    div > a {
+        margin-bottom: 20px;
+        margin-top: 2px;
+        padding-bottom: 30px;
+    }
+
+    img {
+        width: 500px;
+        height: 500px;
+    }
+
+    footer {
+        padding: 6px;
     }
 
 }
