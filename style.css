@@ -247,7 +247,7 @@ footer {
 /*Desktop*/
 
 @media screen and (min-width: 1200px) and (max-width: 1800px){
-    #title1, #title2, footer {
+    #title1, #title2 {
         display: none;
     }
 
@@ -323,5 +323,10 @@ footer {
         padding-top: 10px;
         padding-bottom: 10px;
         margin: auto;
+    }
+
+    footer {
+        padding: 2px;
+        margin-top: 30px;
     }
 }
