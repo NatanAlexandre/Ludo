@@ -63,7 +63,7 @@
     }
 
     nav {
-        position: absolute;
+        position: fixed;
         margin-top: 40px;
         margin-left: 23%;
     }
@@ -96,8 +96,9 @@
     #atividades {
         background-color: #F2D896;
     }
+
     #GamesHomePage > #game1 {
-        position: absolute;
+        position: fixed;
         width: 300px;
         height: 300px;
         left: 65%;
@@ -138,7 +139,7 @@
 
 }
 
-@media  (max-width: 1000px) {
+@media  (max-width: 1030px) and (min-height: 300px) {
     * {
         padding: 0px;
         margin: 0px;
