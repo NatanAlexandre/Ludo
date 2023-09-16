@@ -2,6 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Handjet:wght@300&family=Quicksand&family=Shadows+Into+Light&display=swap');
 
+nav {
+        position: fixed;
+        margin-top: 40px;
+        margin-left: 23%;
+    }
+
 @media  (min-width: 1000px) {
     * {
         padding: 0px;
@@ -62,11 +68,6 @@
         margin-top: 20px;
     }
 
-    nav {
-        position: fixed;
-        margin-top: 40px;
-        margin-left: 23%;
-    }
 
     nav > button {
         width: 175px;
@@ -237,14 +238,17 @@
     #atividades {
         background-color: #F2D896;
     }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: ;
+      }
     
     #GamesHomePage > #game1 {
         position: absolute;
         width: 300px;
         height: 300px;
-        left: 50%;
-        top: 60%;
-        transform: translate(-50%, -50%);
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
         border-radius: 20px;
         cursor: pointer;
@@ -264,7 +268,6 @@
         height: 300px;
         left: 50%;
         top: 120%;
-        transform: translate(-50%, -50%);
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
         border-radius: 20px;
         cursor: pointer;
