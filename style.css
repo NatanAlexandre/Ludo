@@ -102,6 +102,10 @@ footer {
 
 @media screen and (min-width: 320px) and (max-width: 720px){
 
+    #exclusive {
+        display: none;
+    }
+
     header{
         padding: 20px;
         align-items: center;
@@ -169,6 +173,10 @@ footer {
 /*Tablet*/
 
 @media screen and (min-width: 720px) and (max-width: 1200px){
+
+    #exclusive {
+        display: none;
+    }
 
     header {
         padding: 30px;
@@ -305,5 +313,15 @@ footer {
     img {
         width: 500px;
         height: 500px;
+    }
+
+    #exclusive {
+        display: flex;
+    }
+
+    #exclusive > a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: auto;
     }
 }
