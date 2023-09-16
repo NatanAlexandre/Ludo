@@ -36,6 +36,11 @@
         cursor: pointer;
         box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.405);
     }
+
+    header > a {
+        text-decoration: none;
+        color: white;
+    }
     
     body {
         background-color: #9494F5;
