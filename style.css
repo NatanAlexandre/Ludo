@@ -204,6 +204,7 @@ footer {
     nav > button{
         padding: 15px;
         width: 180px;
+        margin-left: 15px;
     }
 
     hr {
@@ -222,7 +223,6 @@ footer {
     div > a {
         margin-bottom: 20px;
         margin-top: 2px;
-        padding-bottom: 30px;
     }
 
     img {
@@ -239,11 +239,22 @@ footer {
 /*Desktop*/
 
 @media screen and (min-width: 1200px) and (max-width: 1800px){
-    header, main, footer {
+    main, img, #title1, #title2, footer {
         display: none;
     }
 
-    body {
-        background-color: rgb(6, 119, 3);
+    header {
+        padding: 30px;
+        display: flex;
     }
+
+    header > a{
+        font-size: 40px;
+        margin-right: 40px;
+    }
+
+    #login {
+        margin-left: auto;
+    }
+
 }
