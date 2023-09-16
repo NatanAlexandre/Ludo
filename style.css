@@ -1,290 +1,141 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Handjet:wght@300&family=Quicksand&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
-/*Desktop*/
-@media  (min-width: 1000px) {
-    * {
-        padding: 0px;
-        margin: 0px;
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.241);
+}
+
+#jogos {
+    color: white;
+    background-color: #B8B8B8;        
+}
+
+#ludo {
+    color: white;
+    background-color: #BDAC91;
+}
+
+#atividades{
+    color: white;
+    background-color: #F2D896;
+}
+
+/*Apple Watch*/
+
+@media screen and (min-width: 160px) and (max-width: 300px){
+    header, main, footer {
+        display: none;
     }
-    
-    header {
+
+    body {
+        background-color: rgb(255, 0, 0);
+    }
+}
+
+/*Mobile*/
+
+@media screen and (min-width: 320px) and (max-width: 720px){
+    img, div > a, footer {
+        display: none;
+    }
+
+    header{
         padding: 20px;
-    }
-    
-    header > h1{
-        display: inline;
-        position: absolute;
-        left: 10%;
-        top: 10%;
-    }
-    
-    header > button {
-        position: relative;
-        left: 60%;
-        margin-top: 15px;
-        background-color: #72538C;
-        color: white;
-        padding: 25px;
-        width: 175px;
-        border-radius: 20px;
-        margin-left: 30px;
-        border: none;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.405);
-    }
-
-    header > button:hover{
-        cursor: pointer;
-        box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.405);
+        align-items: center;
+        text-align: center;
     }
 
     header > a {
-        position: absolute;
+        position: flex;
+        display: block;
         text-decoration: none;
-        color: white;
-        font-size: 60px;
-        left: 15%;
-        top: 3%;
-        font-family: 'Handjet ', cursive;
+        color: #ffff;
         font-family: 'Shadows Into Light', cursive;
-    }
-    
-    body {
-        background-color: #9494F5;
-    }
-    
-    main {
-        width: 1200px;
-        height: 550px;
-        background-color: #ffff;
-        margin-right: auto;
-        margin-left: auto;
-        border-radius: 10px;
-        margin-top: 20px;
-        align-items: center;
-        justify-content: center;
+        font-size: 50px;
+        text-shadow: 5px 5px 5px #8c8ca3;
     }
 
-    nav {
-        position: absolute;
-        margin-top: 3%;
-        margin-left: 15.8%;
+    header > button {
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        background-color: #72538C;
+        font-weight: bolder;
+        margin-right: 5px;
+        margin-left: 6px;
+    }
+
+    header > button:hover {
+        box-shadow:inset 5px 5px 5px #39264976;
+    }
+
+    body {
+        background-color: #D0D0EF;
+        text-align: center;
+        align-items: center;
+    }
+
+    main {
+        padding-top: 10px;
+        padding-bottom: 55px;
+        background-color: #ffff;
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
     }
 
     nav > button {
+        padding: 9px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        display: block;
         width: 200px;
-        height: 56px;
-        color: #ffff;
-        text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.349);
+        height: 70px;
         border: none;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
         border-radius: 20px;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.342);
-        margin-right: 50px;
-        font-weight: bolder;
     }
 
     nav > button:hover {
-        box-shadow:inset 5px 5px 5px rgba(0, 0, 0, 0.342);
-        cursor: pointer;
+        box-shadow:inset 5px 5px 5px rgba(0, 0, 0, 0.322);
     }
+
     
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding-top:180px;
-    }
 
-    #jogos {
-        background-color: #D0D0EF;
-    }
-
-    #ludo {
-        background-color: #BDAC91;
-    }
-
-    #atividades {
-        background-color: #F2D896;
-    }
-
-    #GamesHomePage > div > #game1 {
-        width: 300px;
-        height: 300px;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
-        border-radius: 20px;
-        cursor: pointer;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #title1{
-        position: absolute;
-        top: 85%;
-        left: 36%;
-        text-decoration: none;
-        color: black;
-    }
-
-    #GamesHomePage > div > #game2 {
-        width: 300px;
-        height: 300px;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
-        border-radius: 20px;
-        cursor: pointer;
-        margin-right: auto;
-    }
-
-    #title2{
-        position: absolute;
-        top: 85%;
-        left: 61%;
-        text-decoration: none;
-        color: black;
-    }
 
 }
 
 /*Tablet*/
-@media  (max-width: 1150px) and (min-height: 300px) {
-    * {
-        padding: 0px;
-        margin: 0px;
-    }
-    
-    header {
-        padding: 20px;
-    }
-    
-    header > a{
-        display: inline;
-        position: absolute;
-        left: 10%;
-        margin-top: 10px;
-        color: #ffff;
-        text-decoration: none;
-        font-size: 40px;
-        font-family: 'Handjet ', cursive;
-        font-family: 'Shadows Into Light', cursive;
-    }
-    
-    header > button {
-        position: relative;
-        left: 50%;
-        margin-top: 30px;
-        margin-right: 50px;
-        background-color: #72538C;
-        color: #ffff;
-        padding: 10px;
-        border-radius: 20px;
-        width: 120px;
-        box-shadow: 5px 5px 5px #72538c43;
-        border: solid 0.1px rgba(0, 0, 0, 0);
-    }
 
-    header > button:hover{
-        cursor: pointer;
-        position: relative;
-        left: 50%;
-        margin-top: 10px;
-        margin-right: 50px;
-        background-color: #72538C;
-        color: #ffff;
-        padding: 10px;
-        border-radius: 20px;
-        width: 120px;
-        box-shadow: inset 5px 5px 5px #00000066;
-        border: solid 0.1px rgba(0, 0, 0, 0.093);
+@media screen and (min-width: 600px) and (max-width: 1200px){
+    header, main, footer {
+        display: none;
     }
 
     body {
-        background-color: #9494F5;
-    }
-    
-    main {
-        width: 600px;
-        height: 1000px;
-        background-color: #ffff;
-        margin-right: auto;
-        margin-left: auto;
-        border-radius: 10px;
-        margin-top: 20px;
-    }
-
-    nav {
-        position: absolute;
-        margin-top: 40px;
-        margin-left: 23px;
-    }
-
-    nav > button {
-        width: 175px;
-        height: 34px;
-        color: #ffff;
-        text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.697);
-        border: none;
-        border-radius: 20px;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.342);
-        margin-right: 10px;
-    }
-
-    nav > button:hover {
-        box-shadow:inset 5px 5px 5px rgba(0, 0, 0, 0.342);
-        cursor: pointer;
-    }
-
-    
-
-    #jogos {
-        background-color: #D0D0EF;
-    }
-
-    #ludo {
-        background-color: #BDAC91;
-    }
-
-    #atividades {
-        background-color: #F2D896;
-    }
-    
-    #GamesHomePage > div > #game1 {
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        left: 50%;
-        top: 60%;
-        transform: translate(-50%, -50%);
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
-        border-radius: 20px;
-        cursor: pointer;
-    }
-
-    #title1{
-        position: absolute;
-        top: 85%;
-        left: 40.6%;
-        text-decoration: none;
-        color: black;
-    }
-
-    #GamesHomePage > div > #game2 {
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        left: 50%;
-        top: 120%;
-        transform: translate(-50%, -50%);
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
-        border-radius: 20px;
-        cursor: pointer;
-    }
-
-    #title2{
-        position: absolute;
-        top: 145%;
-        left: 40.6%;
-        text-decoration: none;
-        color: black;
+        background-color: rgb(187, 0, 255);
     }
 }
 
+/*Desktop*/
+
+@media screen and (min-width: 1200px) and (max-width: 1800px){
+    header, main, footer {
+        display: none;
+    }
+
+    body {
+        background-color: rgb(6, 119, 3);
+    }
+}
