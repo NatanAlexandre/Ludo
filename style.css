@@ -2,12 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Handjet:wght@300&family=Quicksand&family=Shadows+Into+Light&display=swap');
 
-nav {
-        position: fixed;
-        margin-top: 40px;
-        margin-left: 23%;
-    }
-
 @media  (min-width: 1000px) {
     * {
         padding: 0px;
@@ -66,8 +60,15 @@ nav {
         margin-left: auto;
         border-radius: 10px;
         margin-top: 20px;
+        align-items: center;
+        justify-content: center;
     }
 
+    nav {
+        position: absolute;
+        margin-top: 40px;
+        margin-left: 23%;
+    }
 
     nav > button {
         width: 175px;
@@ -85,6 +86,13 @@ nav {
         box-shadow:inset 5px 5px 5px rgba(0, 0, 0, 0.342);
         cursor: pointer;
     }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top:130px;
+    }
 
     #jogos {
         background-color: #D0D0EF;
@@ -98,16 +106,14 @@ nav {
         background-color: #F2D896;
     }
 
-    #GamesHomePage > #game1 {
-        position: fixed;
+    #GamesHomePage > div > #game1 {
         width: 300px;
         height: 300px;
-        left: 65%;
-        top: 60%;
-        transform: translate(-50%, -50%);
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
         border-radius: 20px;
         cursor: pointer;
+        margin-left: 190px;
+        margin-right: 50px;
     }
 
     #title1{
@@ -118,16 +124,13 @@ nav {
         color: black;
     }
 
-    #GamesHomePage > #game2 {
-        position: absolute;
+    #GamesHomePage > div > #game2 {
         width: 300px;
         height: 300px;
-        left: 40%;
-        top: 60%;
-        transform: translate(-50%, -50%);
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
         border-radius: 20px;
         cursor: pointer;
+        margin-right: auto;
     }
 
     #title2{
@@ -227,6 +230,8 @@ nav {
         cursor: pointer;
     }
 
+    
+
     #jogos {
         background-color: #D0D0EF;
     }
@@ -238,17 +243,14 @@ nav {
     #atividades {
         background-color: #F2D896;
     }
-
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: ;
-      }
     
-    #GamesHomePage > #game1 {
+    #GamesHomePage > div > #game1 {
         position: absolute;
         width: 300px;
         height: 300px;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -50%);
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
         border-radius: 20px;
         cursor: pointer;
@@ -262,12 +264,13 @@ nav {
         color: black;
     }
 
-    #GamesHomePage > #game2 {
+    #GamesHomePage > div > #game2 {
         position: absolute;
         width: 300px;
         height: 300px;
         left: 50%;
         top: 120%;
+        transform: translate(-50%, -50%);
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
         border-radius: 20px;
         cursor: pointer;
