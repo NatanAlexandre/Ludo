@@ -239,7 +239,7 @@ footer {
 /*Desktop*/
 
 @media screen and (min-width: 1200px) and (max-width: 1800px){
-    main, img, #title1, #title2, footer {
+   img, #title1, #title2, footer {
         display: none;
     }
 
@@ -249,7 +249,7 @@ footer {
     }
 
     header > a{
-        font-size: 40px;
+        font-size: 50px;
         margin-right: 40px;
     }
 
@@ -257,4 +257,32 @@ footer {
         margin-left: auto;
     }
 
+    #login > button {
+        padding: 15px;
+        margin-top: 10px;
+    }
+
+    main{
+        margin: auto;
+        width: 90%;
+        height: 90%;
+    }
+
+    nav {
+        padding: 30px;
+    }
+
+    nav > button {
+        padding: 10px;
+        width: 300px;
+        margin-left: 30px;
+    }
+
+    hr {
+        padding: .3px;
+        background-color: black;
+        width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
