@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Handjet:wght@300&family=Quicksand&family=Shadows+Into+Light&display=swap');
 
+/*Desktop*/
 @media  (min-width: 1000px) {
     * {
         padding: 0px;
@@ -144,6 +145,7 @@
 
 }
 
+/*Tablet*/
 @media  (max-width: 1150px) and (min-height: 300px) {
     * {
         padding: 0px;
@@ -285,3 +287,4 @@
         color: black;
     }
 }
+
