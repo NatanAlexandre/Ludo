@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+#play > a {
+    color: #ffff;
+}
+
+#destaques {
+    background-color: #72538C;
+}
+
+#portugues {
+    background-color: #9494F5;
+}
+
+#matematica {
+    background-color: #CE9FF5;
+}
+
+#ciencias {
+    background-color: #87c1f5;
+}
+
+#outros {
+    background-color: #F8C168;
+}
+
+/*Apple Watch*/
+
+@media screen and (min-width: 160px) and (max-width: 300px){
+    header, main, footer {
+        display: none;
+    }
+
+    body {
+        background-color: rgb(255, 0, 0);
+    }
+}
+
+/*Mobile*/
+
+@media screen and (min-width: 320px) and (max-width: 720px){
+    hr {
+        margin-top: 30px;
+        padding: 0.3px;
+        background-color: black;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #games > a {
+        display: block;
+        margin-top: 30px;
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+    }
+
+    img {
+        margin-top: 20px;
+    }
+}
+
+/*Tablet*/
+
+@media screen and (min-width: 720px) and (max-width: 1200px){
+
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 1200px) and (max-width: 1800px){
+
+}
