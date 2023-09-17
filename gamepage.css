@@ -94,16 +94,6 @@
 
 @media screen and (min-width: 1200px) and (max-width: 1800px){
 
-    #left, #right {
-        display: none;
-    }
-
-    #games {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-    }
-
     #play {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -125,6 +115,12 @@
         color: rgb(0, 0, 0);
         font-weight: bolder;
         font-size: 30px;
+    }
+    
+    #games {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
     }
     
 
